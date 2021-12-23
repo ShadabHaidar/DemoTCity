@@ -13,6 +13,7 @@
 		D073A4C92772338900A06DD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D073A4C72772338900A06DD1 /* Main.storyboard */; };
 		D073A4CB2772338A00A06DD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D073A4CA2772338A00A06DD1 /* Assets.xcassets */; };
 		D073A4CE2772338A00A06DD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D073A4CC2772338A00A06DD1 /* LaunchScreen.storyboard */; };
+		D07DB9DE2773AD750082B314 /* export.plist in Resources */ = {isa = PBXBuildFile; fileRef = D07DB9DD2773AD750082B314 /* export.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		D073A4CA2772338A00A06DD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D073A4CD2772338A00A06DD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D073A4CF2772338A00A06DD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D07DB9DD2773AD750082B314 /* export.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = export.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		D073A4C02772338900A06DD1 /* DemoTCity */ = {
 			isa = PBXGroup;
 			children = (
+				D07DB9DC2773AD2A0082B314 /* Config */,
 				D073A4C12772338900A06DD1 /* AppDelegate.swift */,
 				D073A4C32772338900A06DD1 /* SceneDelegate.swift */,
 				D073A4C52772338900A06DD1 /* ViewController.swift */,
@@ -65,6 +68,14 @@
 				D073A4CF2772338A00A06DD1 /* Info.plist */,
 			);
 			path = DemoTCity;
+			sourceTree = "<group>";
+		};
+		D07DB9DC2773AD2A0082B314 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				D07DB9DD2773AD750082B314 /* export.plist */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +136,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D07DB9DE2773AD750082B314 /* export.plist in Resources */,
 				D073A4CE2772338A00A06DD1 /* LaunchScreen.storyboard in Resources */,
 				D073A4CB2772338A00A06DD1 /* Assets.xcassets in Resources */,
 				D073A4C92772338900A06DD1 /* Main.storyboard in Resources */,
@@ -287,8 +299,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 77X7K8NXLG;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DemoTCity/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -301,8 +315,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.shadab.DemoTCity;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wfc.igotoo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = Dev_WFCC;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -314,8 +329,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 77X7K8NXLG;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DemoTCity/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -328,8 +345,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.shadab.DemoTCity;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wfc.igotoo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = Dev_WFCC;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
