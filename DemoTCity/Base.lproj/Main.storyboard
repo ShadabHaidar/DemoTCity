@@ -16,17 +16,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nTs-j9-EYN">
-                                <rect key="frame" x="100.5" y="424" width="213" height="48"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Arria World" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nTs-j9-EYN">
+                                <rect key="frame" x="103" y="424" width="208" height="48"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hah-Uw-qNa">
+                                <rect key="frame" x="25" y="274" width="364" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="dKW-rR-NLh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="nTs-j9-EYN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5Xn-qY-BLr"/>
+                            <constraint firstItem="Hah-Uw-qNa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="FXm-cS-7Ta"/>
+                            <constraint firstItem="Hah-Uw-qNa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oGd-dL-aVs"/>
+                            <constraint firstItem="nTs-j9-EYN" firstAttribute="top" secondItem="Hah-Uw-qNa" secondAttribute="bottom" constant="100" id="roQ-eG-f4T"/>
                             <constraint firstItem="nTs-j9-EYN" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="uxe-09-8ch"/>
                         </constraints>
                     </view>
