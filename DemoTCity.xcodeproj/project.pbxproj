@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C90E953FC6DC2B4510448047 /* Pods_DemoTCity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC2ED8D0A07B6BBDF0CB5216 /* Pods_DemoTCity.framework */; };
 		D073A4C22772338900A06DD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D073A4C12772338900A06DD1 /* AppDelegate.swift */; };
 		D073A4C42772338900A06DD1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D073A4C32772338900A06DD1 /* SceneDelegate.swift */; };
 		D073A4C62772338900A06DD1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D073A4C52772338900A06DD1 /* ViewController.swift */; };
@@ -17,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		44545E1A715A2B65E937CB53 /* Pods-DemoTCity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoTCity.debug.xcconfig"; path = "Target Support Files/Pods-DemoTCity/Pods-DemoTCity.debug.xcconfig"; sourceTree = "<group>"; };
+		6E03F67913E1B86CF0A471F7 /* Pods-DemoTCity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoTCity.release.xcconfig"; path = "Target Support Files/Pods-DemoTCity/Pods-DemoTCity.release.xcconfig"; sourceTree = "<group>"; };
+		CC2ED8D0A07B6BBDF0CB5216 /* Pods_DemoTCity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoTCity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D073A4BE2772338900A06DD1 /* DemoTCity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoTCity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D073A4C12772338900A06DD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D073A4C32772338900A06DD1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C90E953FC6DC2B4510448047 /* Pods_DemoTCity.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				D073A4C02772338900A06DD1 /* DemoTCity */,
 				D073A4BF2772338900A06DD1 /* Products */,
+				F728CD3C3A481D70E2DD8B34 /* Pods */,
+				D655A9E8BF37D9CCF2105EEC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,6 +85,24 @@
 			path = Config;
 			sourceTree = "<group>";
 		};
+		D655A9E8BF37D9CCF2105EEC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC2ED8D0A07B6BBDF0CB5216 /* Pods_DemoTCity.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F728CD3C3A481D70E2DD8B34 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				44545E1A715A2B65E937CB53 /* Pods-DemoTCity.debug.xcconfig */,
+				6E03F67913E1B86CF0A471F7 /* Pods-DemoTCity.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -85,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D073A4D22772338A00A06DD1 /* Build configuration list for PBXNativeTarget "DemoTCity" */;
 			buildPhases = (
+				2B53DD16E99C75B49737529C /* [CP] Check Pods Manifest.lock */,
 				D073A4BA2772338900A06DD1 /* Sources */,
 				D073A4BB2772338900A06DD1 /* Frameworks */,
 				D073A4BC2772338900A06DD1 /* Resources */,
+				3479DF517215659D18C0348A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -144,6 +171,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2B53DD16E99C75B49737529C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DemoTCity-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3479DF517215659D18C0348A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DemoTCity/Pods-DemoTCity-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DemoTCity/Pods-DemoTCity-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DemoTCity/Pods-DemoTCity-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D073A4BA2772338900A06DD1 /* Sources */ = {
@@ -296,6 +365,7 @@
 		};
 		D073A4D32772338A00A06DD1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44545E1A715A2B65E937CB53 /* Pods-DemoTCity.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -326,6 +396,7 @@
 		};
 		D073A4D42772338A00A06DD1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E03F67913E1B86CF0A471F7 /* Pods-DemoTCity.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
